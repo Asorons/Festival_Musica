@@ -34,5 +34,11 @@
 @mixin grid($columnas : 1, $gap : 5rem){
     display: grid;
     grid-template-columns: repeat($columnas, 1fr);
-    gap: $separacion;
+    gap: $gap;
+}
+
+@mixin resetear-lista{
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
